@@ -1,92 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Вход на сайт</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .login-container {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .login-container h2 {
-        margin-bottom: 20px;
-    }
-    .login-container label {
-        display: block;
-        margin: 10px 0 5px;
-    }
-    .login-container input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #dcdcdc;
-        border-radius: 5px;
-    }
-    .login-container button {
-        background: #007BFF;
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .login-container button:hover {
-        background: #0056b3;
-    }
-</style>
+  <meta charset="UTF-8">
+  <title>Вход на сайт</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="login-container">
+  <div class="login-container">
     <h2>Вход</h2>
     <form id="loginForm">
-        <label for="login">Логин:</label>
-        <input type="text" id="login" required>
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" required>
-        <button type="submit">Войти</button>
+      <label for="login">Логин:</label>
+      <input type="text" id="login" required>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Войти</button>
     </form>
-    <p id="error" style="color: red; display:none;">чё блядь руки кривые ?</p>
-</div>
+    <p id="error">Неправильный логин или пароль</p>
+  </div>
 
-<script>
-    const users = {
-        "test1": "pas1",
-        "user2": "password2",
-        "user3": "password3",
-        "user4": "password4",
-        "user5": "password5",
-        "user6": "password6",
-        "user7": "password7",
-        "user8": "password8",
-        "user9": "password9",
-        "user10": "password10"
-    };
-
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Предотвращаем стандартное поведение формы
-
-        const login = document.getElementById('login').value;
-        const password = document.getElementById('password').value;
-        const error = document.getElementById('error');
-
-        if (users[login] === password) {
-            console.log('Правильный логин и пароль');
-            window.location.href = 'https://sites.google.com/view/wielandtest';
-        } else {
-            console.log('Неправильный логин или пароль');
-            error.style.display = 'block';
-        }
-    });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
