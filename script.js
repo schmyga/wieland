@@ -1,5 +1,5 @@
 const users = {
-  "user1": "password1",
+  "log1": "pas1",
   "user2": "password2",
   "user3": "password3",
   "user4": "password4",
@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   if (users[login] === password) {
     console.log('Правильный логин и пароль');
-    window.location.href = 'https://kuku.ru';
+    window.location.href = 'https://sites.google.com/view/wielandtest';
   } else {
     console.log('Неправильный логин или пароль');
     error.style.display = 'block';
