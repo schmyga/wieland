@@ -1,4 +1,10 @@
 body 
+@media (min-width: 768px) {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 {
     font-family: Arial, sans-serif;
     background-image: url(icon/bild1.jpg);
