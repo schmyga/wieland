@@ -4,7 +4,6 @@ body
     background-image: url(icon/bild1.jpg);
     background-position: center center;
     display: flex;
-    background-attachment: fixed;
     height: 80vh;
   }
 
