@@ -56,27 +56,3 @@ body
   text-align: center;
   margin-top: 20px;
 }      
-@media (max-width: 767px) {
-      .container {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 16px;
-      }
-    }
-@media (min-width: 768px) {
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 40px;
-      }
-      h1 {
-        font-size: 36px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
