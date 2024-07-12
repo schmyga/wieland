@@ -2,10 +2,12 @@ body
 {
   font-family: Arial, sans-serif;
   background-image: url(icon/bild1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height:80vh;
 }
 
 .login-container {
@@ -53,4 +55,4 @@ body
   display: none;
   text-align: center;
   margin-top: 20px;
-}  
+}      
