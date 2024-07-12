@@ -6,3 +6,12 @@
   align-items: center;
   height: 100vh;
 }
+
+
+
+body {
+  background-image: url(icon/bild1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
