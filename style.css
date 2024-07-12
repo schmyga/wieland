@@ -1,9 +1,15 @@
 body 
-@media (min-width: 768px) {
+@media (min-width: 768px)
+{
       .row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+       @media (max-width: 767px)
+      {
+      .row {
+        display: block;
       }
 {
     font-family: Arial, sans-serif;
