@@ -4,8 +4,7 @@ body
     background-image: url(icon/bild1.jpg);
     background-position: center center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-attachment: fixed;
     height: 80vh;
   }
 
